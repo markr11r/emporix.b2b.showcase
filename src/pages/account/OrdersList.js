@@ -43,11 +43,6 @@ const OrderListMobile = ({ orders }) => {
                 <Link to={`${myAccountMyOrdersViewUrl()}${row.id}`}>View</Link>
               </div>
               <div className="font-inter font-semibold text-[14px] underline ml-6">
-                <Link to={`${myAccountMyOrdersInvoiceUrl()}${row.id}`}>
-                  Invoice
-                </Link>
-              </div>
-              <div className="font-inter font-semibold text-[14px] underline ml-6">
                 <Link to={`${createReturnUrl()}${row.id}`}>Return</Link>
               </div>
             </div>
@@ -215,11 +210,6 @@ export const OrderList = (props) => {
                     <div className="font-inter font-semibold text-[14px] underline">
                       <Link to={`${myAccountMyOrdersViewUrl()}${row.id}`}>
                         View
-                      </Link>
-                    </div>
-                    <div className="font-inter font-semibold text-[14px] underline ml-6">
-                      <Link to={`${myCustomOrderOutputUrl()}${row.id}`}>
-                        XML
                       </Link>
                     </div>
                     <div className="font-inter font-semibold text-[14px] underline ml-6">
