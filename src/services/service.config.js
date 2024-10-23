@@ -72,6 +72,8 @@ export const myAccountMySubscriptionsView = () => `/${getTenant()}/my-account/my
 export const myAccountMySubscriptionsManage = () => `/${getTenant()}/my-account/my-subscriptions/`
 export const myAccountMyOrdersViewUrl = () =>
   `/${getTenant()}/my-account/my-orders/view/`
+export const myCustomOrderOutputUrl = () =>
+  `https://test.com/`
 export const myAccountMyOrdersInvoiceUrl = () =>
   `/${getTenant()}/my-account/my-orders/invoice/`
   export const createReturnUrl = () =>

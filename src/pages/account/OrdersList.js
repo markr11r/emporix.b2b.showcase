@@ -16,6 +16,7 @@ import {
   myAccountMyOrdersViewUrl,
   createReturnUrl,
   shippingApi,
+  myCustomOrderOutputUrl,
 } from '../../services/service.config'
 import { useReturns } from 'context/returns-provider'
 import ReturnInfoStatus from './ReturnInfoStatus'
@@ -214,6 +215,11 @@ export const OrderList = (props) => {
                     <div className="font-inter font-semibold text-[14px] underline">
                       <Link to={`${myAccountMyOrdersViewUrl()}${row.id}`}>
                         View
+                      </Link>
+                    </div>
+                    <div className="font-inter font-semibold text-[14px] underline ml-6">
+                      <Link to={`${myCustomOrderOutputUrl()}${row.id}`}>
+                        XML
                       </Link>
                     </div>
                     <div className="font-inter font-semibold text-[14px] underline ml-6">
